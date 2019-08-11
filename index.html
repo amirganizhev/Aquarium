@@ -1,0 +1,201 @@
+<!Doctype html> <!-- -->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сайт про аквариум</title>
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!--Подключение bootstrap-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--Подключение jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> <!--Подключение js-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!--Подключение js от bootstrap-->
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!--Подключение иконок-->
+  <link rel="stylesheet" href="css/main.css"> <!--Подключение css из папки-->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top"> <!--Начало навигационной панели (шапки)-->
+    <div class="container-fluid">
+      <a href="#" class="navbar-brad"><img src="image/logo.png"></a> <!--Логотип из картинки Дорри-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> <!--Создание
+        кнопки для отображения меню на телефоне-->
+        <span class="navbar-toggler-icon"></span> <!--Иконка для кнопки отображения меню на телефоне-->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive"> <!--Создание самого меню-->
+        <ul class="navbar-nav ml-auto"> <!--Список меню-->
+          <div class="dropdown"> <!--Элемент меню "Главная"-->
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Главная
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p class="lead">Главная страница прямо перед вами</p>
+              </div>
+          </div>
+          <div class="dropdown"> <!--Элемент меню "Про сайт"-->
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Про сайт
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p class="lead">Сайт написан с помощью HTML CSS и BOOTSTRAP</p>
+              </div>
+          </div>
+          <div class="dropdown"> <!--Элемент меню "Об авторе"-->
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Об авторе
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p class="lead">Автор является новичком в программировании</p>
+              </div>
+          </div>
+          <div class="dropdown"> <!--Элемент меню "Контакты"-->
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Контакты
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p class="lead">8-800-555-35-35</p>
+                <p class="lead">id3445567389</p>
+                <p class="lead">@mail.darkv</p>
+              </div>
+        </ul> <!--Конец списка-->
+      </div> <!--Конец меню-->
+    </div>
+  </nav> <!--Конец навигационной панели (шапки)-->
+
+  <div class="carousel slide" data-ride="carousel" id="slides"> <!--Блок слайдера-->
+    <ul class="carousel-indicators"> <!--Создание переходов между сладами (3 полоски переходов внизу)-->
+      <li data-target="#slides" data-slide-to="0" class="active"></li> <!--Переход к 1-ому слайдеру-->
+      <li data-target="#slides" data-slide-to="1"></li> <!--Переход к 2-ому слайдеру-->
+      <li data-target="#slides" data-slide-to="2"></li> <!--Переход к 3-ому слайдеру-->
+    </ul>
+    <div class="carousel-inner"> <!--Добавление картинок-->
+      <div class="carousel-item active"> <!--Добавление картинки 1-->
+        <img src="image/aqua1.jpg">
+        <div class="carousel-caption">
+          <h1 class="display2">Как запустить аквариум?</h1> <!--Добавление текста к картинке 1-->
+          <h3>Научитесь правильно запускать аквариум</h3>
+          <a href="https://www.youtube.com/watch?v=KMKIV9l4xoo" class="btn btn-warning btn-lg"
+          role="button" aria-pressed="true">Ссылка</a> <!--Добавление кнопки картинке 1-->
+        </div>
+      </div>
+      <div class="carousel-item"> <!--Добавление картинки 2-->
+        <img src="image/aqua2.jpg">
+      </div>
+      <div class="carousel-item"> <!--Добавление картинки 3-->
+        <img src="image/aqua3.jpg">
+      </div> <!--Коец добавления картинок-->
+    </div>
+  </div> <!--Конец блока слайдера-->
+
+  <div class="container-fluid"> <!--Создание 1-го блока сайта-->
+    <div class="row jumbotron">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"> <!--Текст-->
+        <p class="lead">Первый запуск аквариума требует ответственной подготовки.
+          ля начала нужно изучить информацию и приобрести нужное оборудование.
+          Перед запуском вы уже должны понимать, какие обитатели будут населять
+          аквариум и сколько места им нужно. Исходя из этого подбирается форма и
+          размер аквариума, а потом всё остальное оборудование: фильтры, лампы, термометры,
+          нагреватель, компрессор. А также фон и декорации (по желанию). Они должны соответствовать
+          характеристикам аквариума, количеству и потребностям его обитателей.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"> <!--Кнопка-->
+        <a href="https://hvost.news/animals/fish-care/zapusk-akvariuma-s-nulya/"><button class="btn btn-success btn-lg" type="button">Подробнее</button></a>
+      </div>
+    </div>
+  </div> <!--Конец 1-го блока сайта-->
+
+  <div class="container-fluid"> <!--Создание 2-го блока сайта-->
+    <div class="row text-center alert">
+      <div class="col-12">
+        <h1 class="display-4">Уход за аквариумом</h1>
+      </div>
+      <hr> <!--Горизонтальная линия-->
+      <div class="col-12">
+        <p class="lead">Рыбки считаются самыми простыми в уходе питомцами. Конечно,
+          собирать за ними разбросанные и подпорченные вещи или выслушивать их
+          общение между собой и обращения к хозяевам вам не придется, но над
+          поддержанием нормальных условий для жизни нужно будет трудиться регулярно.</p>
+      </div>
+    </div>
+  </div> <!--Конец 2-го блока сайта-->
+
+  <div class="container-fluid padding"><!--Блок с описанием-->
+    <div class="row text-center padding">
+      <div class="col-xs-12 col-sm-6 col-md-4"> <!--Блок 1-->
+        <i class="fas fa-octicon-flame"></i>
+        <h3>Температура</h3>
+        <p>Итак, вы решили купить несколько рыбок. В таком случае,
+          вам не помешает знать, какой вид какую температуру в аквариуме
+          предпочитает. Все довольно просто. Большинству существующих сегодня
+          декоративных рыбок вполне подходит температура от 22 до 26 градусов.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4"> <!--Блок 2-->
+        <i class="fas fa-octicon-flame"></i>
+        <h3>Чистка</h3>
+        <p>Чистить аквариум нужно регулярно, регулярность этого процесса
+          зависит от того, насколько он велик. В большом аквариуме,
+          объемом от 100 литров, можно производить «генеральную уборку»
+          раз в 2-3 недели, а вот мелкогабаритные водные резервуары нуждаются в
+          более регулярной чистке – минимум раз в неделю. Если вода в аквариуме
+          стала желто-зеленой и приобрела неприятный запах, значит, пора браться
+          за дело.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4"> <!--Блок 3-->
+        <i class="fas fa-octicon-flame"></i>
+        <h3>Подмена воды</h3>
+        <p>Для начала свежую воду надо подготовить. Её выдерживают около двух
+          суток в отдельной ёмкости в целях устранения хлора, а чтобы этот
+          вредный для рыб газ вывелся быстрее, в сосуд с водой можно поместить
+          аэратор. Кроме того, отстаивание воды позволит приблизить её температуру
+          к аквариумной.</p>
+      </div>
+      <hr class="my-4">
+    </div>
+  </div> <!--Конец блока с описанием-->
+
+  <div class="container-fluid padding"> <!--Блок про самый большой аквариум в мире-->
+    <div class="row padding">
+      <div class="offset-lg-2 col-lg-4">
+        <h2>Самый большой в мире аквариум</h2>
+        <p>Самый большой аквариум в мире находится в США в штате Джорджия.
+          В нём находится сто двадцать тысяч особей, общая цена которых 290
+          миллионов долларов.
+          <br><br>
+          Построено это гигантское сооружение было в 2005
+          году, причём история его строительства была довольна интересна.
+          <br><br>
+          Берни Маркус, самый богатый человек этого штата, подарил властям
+          Атланты 250 миллионов долларов, он решил, что в его родном
+          штате должен быть построен самый большой аквариум в мире.
+          Так что же представляет собой этот самый большой аквариум в мире?</p>
+          <br>
+          <a href="https://masterok.livejournal.com/225974.html" class="btn btn-danger">Подробнее</a>
+      </div>
+      <div class+"col-lg-6">
+        <br>
+        <img src="image/bigaqua.jpg" class="img-fluid">
+      </div>
+    </div>
+  </div> <!--Конец блока про самый большой аквариум в мире-->
+
+  <footer class="container-fluid"> <!--Футер сайта-->
+    <div class="container-fluid">
+      <div class="row padding text-center">
+        <div class="col-12">
+          <h2>Наши контакты</h2>
+        </div>
+        <div class="col-12 social padding">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer> <!--Конец футера сайта-->
+
+</body>
+
+</html>
